@@ -1,5 +1,6 @@
 package com.example.a1;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,10 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class NamePage extends AppCompatActivity {
-
     Button btnNamePage;
     EditText etName;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,9 +25,18 @@ public class NamePage extends AppCompatActivity {
             return insets;
         });
         init();
-
+        btnNamePage.setOnClickListener((v)->{
+            String name=etName.getText().toString().trim();
+            if(name.isEmpty()){
+                etName.setError("Enter Name");
+                return;
+            }
+            Intent i =new Intent(NamePage.this, Quiz.class);
+            i.putExtra("name",name);
+            startActivity(i);
+            finish();
+        });
     }
-
     private void init(){
         btnNamePage=findViewById(R.id.btnNamePage);
         etName=findViewById(R.id.etName);
