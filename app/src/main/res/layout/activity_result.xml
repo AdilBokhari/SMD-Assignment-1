@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/scorebg"
+    tools:context=".Result">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scoreboard"
+        android:fontFamily="@font/agbalumo"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        android:id="@+id/tvName"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:id="@+id/tvScore"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:gravity="center"
+        />
+    <Button
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="Share Your Score"
+        android:id="@+id/btnSubmit"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>

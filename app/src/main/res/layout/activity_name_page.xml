@@ -45,11 +45,12 @@
 
     <Button
         android:layout_marginTop="35dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
         android:layout_gravity="center"
         android:text="@string/btnTextNamePage"
         android:id="@+id/btnNamePage"
+        android:textSize="25dp"
         android:backgroundTint="@color/yellow"
         android:textColor="@color/white"
         />
