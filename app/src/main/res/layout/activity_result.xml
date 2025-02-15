@@ -8,6 +8,27 @@
     android:orientation="vertical"
     android:background="@drawable/scorebg"
     tools:context=".Result">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="25dp"
+            android:text="Home"
+            android:textColor="@color/black"
+            android:id="@+id/btnHome"
+            android:background="@android:color/transparent"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_back"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            />
+    </RelativeLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

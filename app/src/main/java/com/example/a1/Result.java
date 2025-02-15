@@ -14,10 +14,8 @@ import androidx.core.view.WindowInsetsCompat;
 import java.util.Objects;
 
 public class Result extends AppCompatActivity {
-
-
     TextView tvName,tvScore;
-    Button btnSubmit;
+    Button btnSubmit,btnHome;
     String[] Answers ={
             "Mars",
             "Tokyo",
@@ -69,11 +67,17 @@ public class Result extends AppCompatActivity {
             intent.setType("text/*");
             startActivity(intent);
         });
+        btnHome.setOnClickListener((v)->{
+            Intent home=new Intent(Result.this, NamePage.class);
+            startActivity(home);
+            finish();
+        });
     }
     private void init()
     {
         tvName=findViewById(R.id.tvName);
         tvScore=findViewById(R.id.tvScore);
         btnSubmit=findViewById(R.id.btnSubmit);
+        btnHome=findViewById(R.id.btnHome);
     }
 }
